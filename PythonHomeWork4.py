@@ -9,21 +9,21 @@
 #         ratios[0] = randint(1, 10) 
 #     return ratios
 
-# def get_polynomial(k, ratios):
+# def get_poly(k, ratios):
 #     var = ['*x^']*(k-1) + ['*x']
-#     polynomial = [[a, b, c] for a, b, c  in itertools.zip_longest(ratios, var, range(k, 1, -1), fillvalue = '') if a !=0]
-#     for x in polynomial:
+#     poly = [[a, b, c] for a, b, c  in itertools.zip_longest(ratios, var, range(k, 1, -1), fillvalue = '') if a !=0]
+#     for x in poly:
 #         x.append(' + ')
-#     polynomial = list(itertools.chain(*polynomial))
-#     polynomial[-1] = ' = 0'
-#     return "".join(map(str, polynomial)).replace(' 1*x',' x')
+#     poly = list(itertools.chain(*poly))
+#     poly[-1] = ' = 0'
+#     return "".join(map(str, poly)).replace(' 1*x',' x')
 
 
 # ratios = get_ratios(k)
-# polynom1 = get_polynomial(k, ratios)
+# polynom1 = get_poly(k, ratios)
 # print(polynom1)
 
-# with open('33_Polynomial.txt', 'w') as data:
+# with open('Poly.txt', 'w') as data:
 #     data.write(polynom1)
 
 ###############################################################################
